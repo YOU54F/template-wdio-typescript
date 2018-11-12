@@ -1,0 +1,35 @@
+{
+  "name": "wdiocucumber-docker-typescript",
+  "version": "1.0.0",
+  "description": "Docker Hosted UI Testing with WebDriverIO & Cucumber-JS, Written in TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf tsrc/",
+    "clean-build": "npm run clean && npm run build",
+    "pretest": "npm run clean-build",
+    "test-local": "wdio ./config/local.conf.js",
+    "test-browserstack": "wdio ./config/browserstack.conf.js",
+    "test-sauce": "wdio ./config/saucelabs.conf.js",
+    "test-testingbot": "wdio ./config/testingbot.conf.js",
+    "dockerbuild": "docker build ../Dockerfile/. -t wdiodocker"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/cucumber": "^4.0.4",
+    "@types/node": "^10.3.4",
+    "@types/webdriverio": "^4.10.2",
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "wdio-cucumber-framework": "^2.1.0",
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-sauce-service": "^0.4.4",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0"
+  }
+}

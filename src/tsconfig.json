@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "declaration": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "removeComments": false,
+      "noImplicitAny": false,
+      "outDir": "./tsrc",
+      "typeRoots": [ "./node_modules/@types" ],
+      "types": ["node","cucumber","webdriverio","chai"]
+  },
+   "include": [
+      "pages/**/*.ts",
+      "stepDefinitions/**/*.ts",
+  ],
+  "exclude": [
+      "allure-results",
+      "node_modules",
+      "tsrc",
+      "app",
+      "config",
+      "features",
+      "test",
+      "errorShots",
+      "package.json",
+      "tslint.json"
+  ],
+  "compileOnSave": false
+}

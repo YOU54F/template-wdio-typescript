@@ -1,0 +1,28 @@
+version: '2.2'
+services:
+    webdriverio:
+        build: ./Dockerfile
+        image: wdiodocker
+        depends_on:
+            - chromedriver
+        volumes:
+            - ./src:/src
+            # - /var/run/docker.sock:/var/run/docker.sock
+        environment:
+            - WAIT_FOR_HOSTS=chromedriver:4444 chromedriver:5900
+    chromedriver:
+        image: selenium/standalone-chrome-debug
+        ports:
+          - 5900:5900
+
+# selenium/base: Base image which includes Java runtime and Selenium Server JAR file
+# selenium/hub: Image for running a Grid Hub
+# selenium/node-base: Base image for Grid Nodes which includes a virtual desktop environment
+# selenium/node-chrome: Grid Node with Chrome installed, needs to be connected to a Grid Hub
+# selenium/node-firefox: Grid Node with Firefox installed, needs to be connected to a Grid Hub
+# selenium/node-chrome-debug: Grid Node with Chrome installed and runs a VNC server, needs to be connected to a Grid Hub
+# selenium/node-firefox-debug: Grid Node with Firefox installed and runs a VNC server, needs to be connected to a Grid Hub
+# selenium/standalone-chrome: Selenium Standalone with Chrome installed
+# selenium/standalone-firefox: Selenium Standalone with Firefox installed
+# selenium/standalone-chrome-debug: Selenium Standalone with Chrome installed and runs a VNC server
+# selenium/standalone-firefox-debug: Selenium Standalone with Firefox installed and runs a VNC server

@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dockerbuild": "docker build Dockerfile/. -t wdiodocker"
+    }
+}
