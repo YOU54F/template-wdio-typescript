@@ -17,7 +17,7 @@
 
 * Clone the repository into a folder
 * Optional - build docker image locally
-* Install dependencies with `docker-compose -rm webdriverio npm install`
+* Install dependencies with `docker-compose run --rm webdriverio npm install`
 
 You can build the docker image locally
 
@@ -29,7 +29,7 @@ Don't forget to update your `docker-compose.yml` to use the local docker image
 
 * Run docker-compose to connect to the container and compile the typeScript src files
 
- `docker-compose -rm webdriverio npm run build`
+ `docker-compose run --rm webdriverio npm run build`
 
 ### Running Tests
 
@@ -39,23 +39,23 @@ To execute across Saucelabs, set the `SAUCE_USERNAME` and `SAUCE_ACCESSKEY` envi
 
 Note that you aren't required to create a Sauce Connect tunnel, this will be handled automatically.
 
-Run `docker-compose -rm webdriverio npm run test-sauce`
+Run `docker-compose run --rm webdriverio npm run test-sauce`
 
 #### BrowserStack
 
 To execute across BrowserStack, set the `BROWSERSTACK_USERNAME` and `BROWSERSTACK_ACCESSKEY` environment variables.
 
-Run `docker-compose -rm webdriverio npm run test-browserstack`
+Run `docker-compose run --rm webdriverio npm run test-browserstack`
 
 #### TestingBot
 
 To execute across TestingBot, set the `TESTINGBOT_USERNAME` and `TESTINGBOT_ACCESSKEY` environment variables.
 
-Run `docker-compose -rm webdriverio npm run test-testingbot`
+Run `docker-compose run --rm webdriverio npm run test-testingbot`
 
 #### Selenium in Locally Hosted Docker Container
 
-Run `docker-compose -rm webdriverio npm run test-local`
+Run `docker-compose run --rm webdriverio npm run test-local`
 
 ## Configuration
 

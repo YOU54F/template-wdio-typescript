@@ -16,4 +16,4 @@ WORKDIR /src
 COPY wait-for.sh /usr/local/bin/wait-for
 COPY entrypoint.sh /usr/local/bin/entrypoint
 
-ENTRYPOINT ["entrypoint"]
+ENTRYPOINT []
