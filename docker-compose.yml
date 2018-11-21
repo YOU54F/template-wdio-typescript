@@ -7,7 +7,6 @@ services:
             - chromedriver
         volumes:
             - ./src:/src
-            # - /var/run/docker.sock:/var/run/docker.sock
         environment:
             - WAIT_FOR_HOSTS=chromedriver:4444 chromedriver:5900
     chromedriver:

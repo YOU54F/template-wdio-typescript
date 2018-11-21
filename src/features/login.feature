@@ -5,7 +5,7 @@ Feature: The internet - Logging in
     Then I am presented with the success message
     And the logout button is visible
 
-      Scenario: User denied access with invalid details
-        Given I attempt to log in with invalid details
-        Then I am presented with the error message
-        And the logout button is visible
+  Scenario: User denied access with invalid details
+    Given I attempt to log in with invalid details
+    Then I am presented with the error message
+    And the login button is visible

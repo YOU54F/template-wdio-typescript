@@ -33,3 +33,10 @@ Then(
     () => {
         expect(LoginPage.logoutButton.isVisible());
     });
+
+
+Then(
+    /^the login button is visible/,
+    () => {
+        expect(LoginPage.loginButton.isVisible());
+    });
