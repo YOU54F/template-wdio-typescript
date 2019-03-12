@@ -14,22 +14,22 @@
     "dockerbuild": "docker build ../Dockerfile/. -t wdiodocker"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/cucumber": "^4.0.4",
-    "@types/node": "^10.3.4",
-    "@types/webdriverio": "^4.10.2",
-    "chai": "^4.1.2",
-    "cucumber": "^4.2.1",
-    "rimraf": "^2.6.2",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2",
-    "wdio-cucumber-framework": "^2.1.0",
+    "@types/chai": "4.1.7",
+    "@types/cucumber": "4.0.4",
+    "@types/node": "10.12.5",
+    "@types/webdriverio": "4.13.0",
+    "chai": "4.2.0",
+    "cucumber": "4.2.1",
+    "rimraf": "2.6.2",
+    "tslint": "5.11.0",
+    "typescript": "2.9.2",
+    "wdio-cucumber-framework": "2.2.8",
     "wdio-cucumber-reporter": "0.0.2",
-    "wdio-sauce-service": "^0.4.4",
-    "wdio-spec-reporter": "^0.1.4",
-    "webdriverio": "^4.12.0"
+    "wdio-sauce-service": "0.4.13",
+    "wdio-spec-reporter": "0.1.5",
+    "webdriverio": "4.14.0"
   },
   "dependencies": {
-    "dotenv": "^6.1.0"
+    "dotenv": "6.1.0"
   }
 }
