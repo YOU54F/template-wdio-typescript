@@ -1,17 +1,17 @@
-DOCKERIMGNAME=wdiodocker
+DOCKERIMGNAME=webdriverio
 DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
 
 # Docker Related Commands
 dockerbuild:
-	docker build . -t wdiodocker
+	docker build . -t webdriverio
 dockertag:
-	docker tag wdiodocker you54f/wdiodocker
+	docker tag webdriverio you54f/webdriverio
 dockerpush:
-	docker push you54f/wdiodocker:latest
+	docker push you54f/webdriverio:latest
 dockerremovelocal:
-	docker rmi wdiodocker
+	docker rmi webdriverio
 dockerremoveremote:
-	docker rmi you54f/wdiodocker
+	docker rmi you54f/webdriverio
 
 # Test Related Commands
 build:
