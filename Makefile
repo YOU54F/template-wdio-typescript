@@ -1,4 +1,4 @@
-DOCKERIMGNAME=webdriverio
+DOCKERIMGNAME=wdiodocker
 DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
 
 # Docker Related Commands
