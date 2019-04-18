@@ -11,7 +11,7 @@
     "test-browserstack": "wdio ./config/browserstack.conf.js",
     "test-sauce": "wdio ./config/saucelabs.conf.js",
     "test-testingbot": "wdio ./config/testingbot.conf.js",
-    "dockerbuild": "docker build ../Dockerfile/. -t wdiodocker"
+    "dockerbuild": "docker build ../Dockerfile/. -t webdriverio"
   },
   "devDependencies": {
     "@types/chai": "4.1.7",
