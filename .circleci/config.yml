@@ -6,12 +6,6 @@ jobs:
     steps:
     - checkout
     - run:
-        name: install
-        command: make install
-    - run:
-        name: Compile TypeScript
-        command: make build
-    - run:
         name: build image
         command: make dockerbuild
     - run:
