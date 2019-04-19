@@ -17,7 +17,7 @@
     "@types/chai": "4.1.7",
     "@types/cucumber": "4.0.4",
     "@types/node": "10.14.5",
-    "@types/webdriverio": "4.13.0",
+    "@types/webdriverio": "4.13.3",
     "chai": "4.2.0",
     "cucumber": "5.1.0",
     "rimraf": "2.6.3",
