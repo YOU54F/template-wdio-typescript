@@ -1754,10 +1754,10 @@ wdio-dot-reporter@~0.0.8:
   resolved "https://registry.yarnpkg.com/wdio-dot-reporter/-/wdio-dot-reporter-0.0.10.tgz#facfb7c9c5984149951f59cbc3cd0752101cf0e0"
   integrity sha512-A0TCk2JdZEn3M1DSG9YYbNRcGdx/YRw19lTiRpgwzH4qqWkO/oRDZRmi3Snn4L2j54KKTfPalBhlOtc8fojVgg==
 
-wdio-sauce-service@0.4.13:
-  version "0.4.13"
-  resolved "https://registry.yarnpkg.com/wdio-sauce-service/-/wdio-sauce-service-0.4.13.tgz#c5fc62633161de76cc6465dab41eed2ecdcfe120"
-  integrity sha512-RoAh88l5xvevopwg+lH+CKgYDf9WGrW2DQrIsTiSVyT0wPHTAt3ndrRJS52SmBIbHlqMUdrGHnaZgYsVh8afkQ==
+wdio-sauce-service@0.4.14:
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/wdio-sauce-service/-/wdio-sauce-service-0.4.14.tgz#7d342e7abae5734b662b1243bb9476d33d465797"
+  integrity sha512-LlnMHVzbuaF69CzcqzJiMAkJbdOTlsX3vRqD4cf3eE3UTC6rdRN9DhFCFBeQq6KW1L2bE1LbegFteo0V4Nilkw==
   dependencies:
     request "^2.88.0"
     sauce-connect-launcher "~1.2.3"
