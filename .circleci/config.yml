@@ -6,8 +6,20 @@ jobs:
     steps:
     - checkout
     - run:
+        name: install
+        command: make install
+    - run:
         name: Compile TypeScript
         command: make build
     - run:
         name: Run tests
         command: make test-local
+    - run:
+        name: install in docker
+        command: make docker-install
+    - run:
+        name: Compile TypeScript in docker
+        command: make docker-build
+    - run:
+        name: Run tests in docker
+        command: make docker-test-local

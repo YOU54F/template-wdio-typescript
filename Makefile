@@ -13,20 +13,44 @@ dockerremovelocal:
 dockerremoveremote:
 	docker rmi you54f/webdriverio
 
+install:
+	 yarn install
+
+docker-install:
+	 $(DOCKERRUNCMD) yarn install
+
+
 # Test Related Commands
 build:
-	$(DOCKERRUNCMD) yarn run build
+	 yarn run build
 pretest:
-	$(DOCKERRUNCMD) yarn run clean-build
+	 yarn run clean-build
 clean:
+	 yarn run clean
+
+# Test Related Commands
+docker-build:
+	$(DOCKERRUNCMD) yarn run build
+docker-pretest:
+	$(DOCKERRUNCMD) yarn run clean-build
+docker-clean:
 	$(DOCKERRUNCMD) yarn run clean
 
 # Test Related Commands
-test-local:
+docker-test-local:
 	$(DOCKERRUNCMD) yarn run test-local
-test-sauce:
+docker-test-sauce:
 	$(DOCKERRUNCMD) yarn run test-sauce
-test-browserstack:
+docker-test-browserstack:
 	$(DOCKERRUNCMD) yarn run test-browserstack
-test-testingbot:
+docker-test-testingbot:
 	$(DOCKERRUNCMD) yarn run test-testingbot
+# Test Related Commands
+test-local:
+	 yarn run test-local
+test-sauce:
+	 yarn run test-sauce
+test-browserstack:
+	 yarn run test-browserstack
+test-testingbot:
+	 yarn run test-testingbot
