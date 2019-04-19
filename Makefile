@@ -1,9 +1,9 @@
 DOCKERIMGNAME=webdriverio
-DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME) --build
+DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
 
 # Docker Related Commands
 dockerbuild:
-	docker build -t webdriverio .
+	docker build -t webdriverio ./Dockerfile
 dockertag:
 	docker tag webdriverio you54f/webdriverio
 dockerpush:
