@@ -2,7 +2,7 @@ version: '2.2'
 services:
     webdriverio:
         build: ./Dockerfile
-        image: wdiodocker
+        image: webdriverio
         depends_on:
             - chromedriver
         volumes:

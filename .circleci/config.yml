@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  build:
+    machine:
+       docker_layer_caching: true
+    steps:
+    - checkout
+    - run:
+        name: build image
+        command: make dockerbuild
+    - run:
+        name: install in docker
+        command: make docker-install
+    - run:
+        name: Compile TypeScript in docker
+        command: make docker-build
+    - run:
+        name: Run tests in docker
+        command: make docker-test-local
+    - run:
+        name: tag docker
+        command: make dockertag
+    # - run:
+    #     name: push docker
+    #     command: make dockerpush
