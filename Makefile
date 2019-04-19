@@ -1,5 +1,5 @@
 DOCKERIMGNAME=webdriverio
-DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
+DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME) --build
 
 # Docker Related Commands
 dockerbuild:
