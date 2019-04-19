@@ -15,21 +15,21 @@
   },
   "devDependencies": {
     "@types/chai": "4.1.7",
-    "@types/cucumber": "4.0.4",
-    "@types/node": "10.12.5",
-    "@types/webdriverio": "4.13.0",
+    "@types/cucumber": "4.0.5",
+    "@types/node": "11.13.5",
+    "@types/webdriverio": "5.0.0",
     "chai": "4.2.0",
-    "cucumber": "4.2.1",
-    "rimraf": "2.6.2",
-    "tslint": "5.11.0",
-    "typescript": "2.9.2",
+    "cucumber": "5.1.0",
+    "rimraf": "2.6.3",
+    "tslint": "5.16.0",
+    "typescript": "3.4.4",
     "wdio-cucumber-framework": "2.2.8",
     "wdio-cucumber-reporter": "0.0.2",
-    "wdio-sauce-service": "0.4.13",
+    "wdio-sauce-service": "0.4.14",
     "wdio-spec-reporter": "0.1.5",
-    "webdriverio": "4.14.0"
+    "webdriverio": "5.7.14"
   },
   "dependencies": {
-    "dotenv": "6.1.0"
+    "dotenv": "7.0.0"
   }
 }
