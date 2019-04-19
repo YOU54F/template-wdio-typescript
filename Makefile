@@ -5,9 +5,9 @@ DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
 dockerbuild:
 	docker build -t webdriverio ./Dockerfile
 dockertag:
-	docker tag webdriverio you54f/webdriverio
+	docker tag webdriverio you54f/webdriverio:$(CIRCLE_BRANCH)
 dockerpush:
-	docker push you54f/webdriverio:$CIRCLE_BRANCH
+	docker push you54f/webdriverio:${CIRCLE_BRANCH}
 dockerremovelocal:
 	docker rmi webdriverio
 dockerremoveremote:
