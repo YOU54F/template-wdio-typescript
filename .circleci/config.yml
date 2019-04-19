@@ -15,9 +15,6 @@ jobs:
     #     name: Run tests
     #     command: make test-local
     - run:
-        name: build image
-        command: make dockerbuild
-    - run:
         name: install in docker
         command: make docker-install
     - run:
