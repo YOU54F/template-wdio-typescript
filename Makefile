@@ -7,28 +7,35 @@ dockerbuild:
 dockertag:
 	docker tag webdriverio you54f/webdriverio
 dockerpush:
-	docker push you54f/webdriverio:latest
+	docker push you54f/webdriverio:$CIRCLE_BRANCH
 dockerremovelocal:
 	docker rmi webdriverio
 dockerremoveremote:
 	docker rmi you54f/webdriverio
 
+# Test Related Commands
 install:
-	 yarn install
+	 cd src && yarn install
+build:
+	 cd src && yarn run build
+pretest:
+	 cd src && yarn run clean-build
+clean:
+	 cd src && yarn run clean
 
+# Test Related Commands
+test-local:
+	 cd src && yarn run test-local
+test-sauce:
+	 cd src && yarn run test-sauce
+test-browserstack:
+	 cd src && yarn run test-browserstack
+test-testingbot:
+	 cd src && yarn run test-testingbot
+
+# Test Related Commands
 docker-install:
 	 $(DOCKERRUNCMD) yarn install
-
-
-# Test Related Commands
-build:
-	 yarn run build
-pretest:
-	 yarn run clean-build
-clean:
-	 yarn run clean
-
-# Test Related Commands
 docker-build:
 	$(DOCKERRUNCMD) yarn run build
 docker-pretest:
@@ -45,12 +52,3 @@ docker-test-browserstack:
 	$(DOCKERRUNCMD) yarn run test-browserstack
 docker-test-testingbot:
 	$(DOCKERRUNCMD) yarn run test-testingbot
-# Test Related Commands
-test-local:
-	 yarn run test-local
-test-sauce:
-	 yarn run test-sauce
-test-browserstack:
-	 yarn run test-browserstack
-test-testingbot:
-	 yarn run test-testingbot

@@ -5,15 +5,12 @@ jobs:
        docker_layer_caching: true
     steps:
     - checkout
-    # - run:
-    #     name: install
-    #     command: make install
-    # - run:
-    #     name: Compile TypeScript
-    #     command: make build
-    # - run:
-    #     name: Run tests
-    #     command: make test-local
+    - run:
+        name: install
+        command: make install
+    - run:
+        name: Compile TypeScript
+        command: make build
     - run:
         name: build image
         command: make dockerbuild
@@ -26,3 +23,9 @@ jobs:
     - run:
         name: Run tests in docker
         command: make docker-test-local
+    - run:
+        name: tag docker
+        command: make dockertag
+    - run:
+        name: push docker
+        command: make dockerpush
