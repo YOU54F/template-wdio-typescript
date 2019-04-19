@@ -20,6 +20,6 @@ jobs:
     - run:
         name: tag docker
         command: make dockertag
-    - run:
-        name: push docker
-        command: make dockerpush
+    # - run:
+    #     name: push docker
+    #     command: make dockerpush
