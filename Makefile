@@ -3,7 +3,7 @@ DOCKERRUNCMD=docker-compose run --rm $(DOCKERIMGNAME)
 
 # Docker Related Commands
 dockerbuild:
-	docker build . -t webdriverio
+	docker build -t webdriverio .
 dockertag:
 	docker tag webdriverio you54f/webdriverio
 dockerpush:
