@@ -1,4 +1,4 @@
-FROM node:8.15-alpine
+FROM node:8.16-alpine
 
 ENV NODE_PATH /install/node_modules/
 ENV PATH /install/node_modules/.bin:$PATH
