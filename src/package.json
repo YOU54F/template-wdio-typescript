@@ -21,7 +21,7 @@
     "chai": "4.2.0",
     "cucumber": "5.1.0",
     "rimraf": "2.6.3",
-    "tslint": "5.16.0",
+    "tslint": "5.17.0",
     "typescript": "3.5.1",
     "wdio-cucumber-framework": "2.2.8",
     "wdio-cucumber-reporter": "0.0.2",
