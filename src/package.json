@@ -20,7 +20,7 @@
     "@types/webdriverio": "4.13.3",
     "chai": "4.2.0",
     "cucumber": "5.1.0",
-    "rimraf": "2.7.0",
+    "rimraf": "2.7.1",
     "tslint": "5.18.0",
     "typescript": "3.5.3",
     "wdio-cucumber-framework": "2.2.8",
