@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/chai": "4.2.0",
     "@types/cucumber": "4.0.7",
-    "@types/node": "10.14.16",
+    "@types/node": "10.14.17",
     "@types/webdriverio": "4.13.3",
     "chai": "4.2.0",
     "cucumber": "5.1.0",
