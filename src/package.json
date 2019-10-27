@@ -19,7 +19,7 @@
     "@types/node": "10.17.0",
     "@types/webdriverio": "4.13.3",
     "chai": "4.2.0",
-    "cucumber": "6.0.2",
+    "cucumber": "6.0.3",
     "rimraf": "3.0.0",
     "tslint": "5.20.0",
     "typescript": "3.6.4",
