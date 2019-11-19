@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@types/chai": "4.2.5",
-    "@types/cucumber": "4.0.7",
+    "@types/cucumber": "6.0.0",
     "@types/node": "10.17.5",
     "@types/webdriverio": "4.13.3",
     "chai": "4.2.0",
-    "cucumber": "6.0.3",
+    "cucumber": "6.0.5",
     "rimraf": "3.0.0",
     "tslint": "5.20.1",
     "typescript": "3.7.2",
