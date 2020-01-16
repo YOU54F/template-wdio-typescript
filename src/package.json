@@ -22,7 +22,7 @@
     "cucumber": "6.0.5",
     "rimraf": "3.0.0",
     "tslint": "5.20.1",
-    "typescript": "3.7.4",
+    "typescript": "3.7.5",
     "wdio-cucumber-framework": "2.2.8",
     "wdio-cucumber-reporter": "0.0.2",
     "wdio-sauce-service": "0.4.14",
