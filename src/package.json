@@ -14,7 +14,7 @@
     "dockerbuild": "docker build ../Dockerfile/. -t webdriverio"
   },
   "devDependencies": {
-    "@types/chai": "4.2.13",
+    "@types/chai": "4.2.14",
     "@types/cucumber": "6.0.1",
     "@types/node": "10.17.39",
     "@types/webdriverio": "4.13.3",
