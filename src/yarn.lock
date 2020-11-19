@@ -41,10 +41,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.6.tgz#37ec75690830acb0d74ce3c6c43caab787081e85"
   integrity sha512-Xoo/EBzEe8HxTSwaZNLZjaW6M6tA/+GmD3/DZ6uo8qSaolE/9Oarko0oV1fVfrLqOz0tx0nXJB4rdD5c+vixLw==
 
-"@types/node@10.17.45":
-  version "10.17.45"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.45.tgz#62876db8db680f20f6114b9ae5683d74577d0c13"
-  integrity sha512-a+oe0zGtwRsSDynACia/z1e4gKPNnDhAV3G6GWY6ZNCzaujNCdKC7dE2JFkGHAlUhCRHgXNmWbh417bi9dEXBw==
+"@types/node@10.17.46":
+  version "10.17.46"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.46.tgz#1cd867ebfe9957ab45951f2f715f8de5f3dab7a3"
+  integrity sha512-Tice8a+sJtlP9C1EUo0DYyjq52T37b3LexVu3p871+kfIBIN+OQ7PKPei1oF3MgF39olEpUfxaLtD+QFc1k69Q==
 
 "@types/webdriverio@4.13.3":
   version "4.13.3"
