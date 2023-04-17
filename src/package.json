@@ -27,7 +27,7 @@
     "wdio-cucumber-reporter": "0.0.2",
     "wdio-sauce-service": "0.4.14",
     "wdio-spec-reporter": "0.1.5",
-    "webdriverio": "7.5.6"
+    "webdriverio": "7.31.1"
   },
   "dependencies": {
     "dotenv": "9.0.0"
